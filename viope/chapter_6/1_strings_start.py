@@ -12,6 +12,7 @@ def strings_start():
     string_length = len(user_input)
 
     # Print the results
+    print()
     print(lowercase_string)
     print(uppercase_string)
     print(f"{string_length} characters")

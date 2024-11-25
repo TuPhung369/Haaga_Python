@@ -14,7 +14,7 @@ def print_matrix_sum(matrix1, matrix2):
 
     # Print the resulting sum matrix
     for row in sum_matrix:
-        print(" ".join(map(str, row)))  # Print each row in the required format
+        print(" ".join(map(str, row)) + " ")  # Print each row in the required format
 
 
 def main():

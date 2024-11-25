@@ -5,17 +5,17 @@ def strings_surnames():
 
     # Input surnames from the user
     for _ in range(count):
-        surname = input("Enter a surname: ")
+        surname = input("Enter a surname: ").strip()
         surnames.append(surname)
 
-    # Create a set to store distinct surnames, ignoring case
-    distinct_surnames = {surname.capitalize() for surname in surnames}
+    # Create a dictionary to ensure distinct surnames and preserve original capitalization
+    distinct_surnames = {surname.lower(): surname.capitalize() for surname in surnames}
 
-    # Sort the surnames in ascending order
-    sorted_surnames = sorted(distinct_surnames)
+    # Sort the surnames alphabetically based on the lowercase version
+    sorted_surnames = sorted(distinct_surnames.values())
 
     # Print the distinct surnames as required
-    print(" ".join(sorted_surnames))
+    print("\n" + " ".join(sorted_surnames))
 
 
 # Main function to run the program

@@ -10,9 +10,9 @@ def lists_unique_integers():
     # Sort all inputted integers
     all_integers_sorted = sorted(integers)
 
-    # Print results
-    print("Distinct integers in ascending order:", distinct_integers)
-    print("All inputted values in ascending order:", all_integers_sorted)
+    # Print results without brackets
+    print(", ".join(map(str, distinct_integers)))
+    print(", ".join(map(str, all_integers_sorted)))
 
 
 # Main function to test

@@ -1,6 +1,18 @@
 def strings_of_pearls():
     pearl_count = 0
 
+    # Get the first string
+    first_input = input("Enter first string: ")
+
+    # Check if the first input is "quit"
+    if first_input.lower() == "quit":
+        print("\nBye!")
+        return
+
+    # Count occurrences of "pearl" (case-insensitive)
+    if first_input.lower() == "pearl":
+        pearl_count += 1
+
     while True:
         user_input = input("Enter next string: ")
 
@@ -12,9 +24,12 @@ def strings_of_pearls():
         if user_input.lower() == "pearl":
             pearl_count += 1
 
-    # Check if pearl_count is greater than 0 and print the result
+    # Print the result
+    print()
     if pearl_count > 0:
         print(f"{pearl_count} pearls")
+    else:
+        print("0 pearls")
 
     print("Bye!")
 

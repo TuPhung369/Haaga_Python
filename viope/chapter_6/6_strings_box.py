@@ -2,8 +2,8 @@ def strings_box():
     # Input the string from the user
     user_string = input("Enter a string: ")
 
-    # Calculate the length of the string for box width
-    box_width = len(user_string) + 4  # 4 for the spaces and borders
+    # Calculate the length of the string box width
+    box_width = len(user_string) + 4
 
     # Print the box with the string
     print("-" * box_width)
